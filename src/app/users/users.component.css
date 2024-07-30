@@ -1,0 +1,14 @@
+:host {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    overflow: auto;
+}
+
+@media (min-width: 768px) {
+    :host {
+        flex-direction: column;
+    }
+}
