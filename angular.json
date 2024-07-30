@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "13-routing": {
+        "tasks-router": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:class": {
@@ -38,7 +38,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:application",
                     "options": {
-                        "outputPath": "dist/13-routing",
+                        "outputPath": "dist/tasks-router",
                         "index": "src/index.html",
                         "browser": "src/main.ts",
                         "polyfills": ["zone.js"],
@@ -80,10 +80,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "buildTarget": "13-routing:build:production"
+                            "buildTarget": "tasks-router:build:production"
                         },
                         "development": {
-                            "buildTarget": "13-routing:build:development"
+                            "buildTarget": "tasks-router:build:development"
                         }
                     },
                     "defaultConfiguration": "development",
@@ -110,7 +110,7 @@
                     }
                 },
                 "deploy": {
-                  "builder": "angular-cli-ghpages:deploy"
+                    "builder": "angular-cli-ghpages:deploy"
                 }
             }
         }
